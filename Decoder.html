@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Treasure-Hunt</title>
+</head>
+<body>
+  <h1>Base64 Decoder</h1>
+
+  <label for="input">Base64 String:</label>
+  <input type="text" id="input" placeholder="Enter Base64 string">
+  <button onclick="decodeBase64()">Decode</button>
+
+  <div id="output"></div>
+
+  <script>
+    function decodeBase64() {
+      var input = document.getElementById('input').value;
+      var decodedString = window.atob(input);
+      document.getElementById('output').innerText = 'Decoded String: ' + decodedString;
+    }
+  </script>
+</body>
+</html>
